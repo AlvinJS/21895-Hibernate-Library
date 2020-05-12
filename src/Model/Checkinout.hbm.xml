@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 11, 2020 11:33:32 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model.Checkinout" table="checkinout" schema="public" optimistic-lock="version">
+        <id name="status" type="string">
+            <column name="status" length="500" />
+            <generator class="assigned" />
+        </id>
+        <property name="client" type="string">
+            <column name="client" length="200" />
+        </property>
+        <property name="book" type="string">
+            <column name="book" length="200" />
+        </property>
+        <property name="date" type="date">
+            <column name="date" length="13" />
+        </property>
+        <property name="operationCategory" type="string">
+            <column name="operation_category" length="15" />
+        </property>
+    </class>
+</hibernate-mapping>

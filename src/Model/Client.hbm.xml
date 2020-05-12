@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 11, 2020 11:33:32 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class name="Model.ClientInfo" optimistic-lock="version" schema="public" table="client">
+    <id name="regid" type="string">
+      <column length="10" name="regid"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="firstName" type="string">
+      <column length="30" name="first_name"/>
+    </property>
+    <property name="lastName" type="string">
+      <column length="30" name="last_name"/>
+    </property>
+    <property name="phoneNumber" type="string">
+      <column length="20" name="phone_number"/>
+    </property>
+    <property name="emailAddress" type="string">
+      <column length="90" name="email_address"/>
+    </property>
+    <property name="clientCategory" type="string">
+      <column length="30" name="client_category"/>
+    </property>
+    <property name="photoPath" type="string">
+      <column length="100" name="photo_path"/>
+    </property>
+  </class>
+</hibernate-mapping>
